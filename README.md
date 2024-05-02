@@ -20,7 +20,10 @@ git clone https://github.com/suraj143/jewlex-stack.git
 cd jewlex-stack
 ```
 - Copy code in app directory
-
+```sh
+mkdir app
+cp -r <source_code_path> app
+```
 - Build and Launch Infra
 ```sh
 docker-compose up -d
