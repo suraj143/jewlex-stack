@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  nextjs:
+    image: node:14-alpine
+    command: sh -c "cd /app && npm install && npm run dev"
+    working_dir: /app
+    volumes:
+      - ./app:/app
+    ports:
+      - "3000:3000"
+    depends_on:
+      - redis
+      - postgres
+
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - ./redis_data:/data
+
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: adminuser
+      POSTGRES_PASSWORD: adminmypassword
+      POSTGRES_DB: admindatabase
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data
+
+volumes:
+  redis_data:
+  postgres_data:
