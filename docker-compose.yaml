@@ -3,6 +3,7 @@ version: '3.8'
 services:
   nextjs:
     image: node:14-alpine
+#Change build npm commands as per logic
     command: sh -c "cd /app && npm install && npm run dev"
     working_dir: /app
     volumes:
