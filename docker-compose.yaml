@@ -33,6 +33,14 @@ services:
     volumes:
       - ./postgres_data:/var/lib/postgresql/data
 
+  admin:
+    image: adminer
+    restart: always
+    depends_on:
+      - postgres
+    ports:
+      - 8080:8080
+
 volumes:
   redis_data:
   postgres_data:

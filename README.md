@@ -29,6 +29,15 @@ cp -r <source_code_path> app
 docker-compose up -d
 docker-compose ps
 ```
-- Open Browser to access Nodejs/NextJS App: http://127.0.0.1:300 or http://localhost:3000
+- Open Browser to access Nodejs/NextJS App: http://127.0.0.1:3000 or http://localhost:3000
 
+- Database UI Adminer App: http://127.0.0.1:8080 or http://localhost:8080
+  UI Login Details from docker-compose file
+```sh
+      POSTGRES_USER: xxxxx
+      POSTGRES_PASSWORD: xxxx
+      POSTGRES_DB: xxxxx
+```
 - update docker-compose.yaml file as per your business requirements 
+
+
