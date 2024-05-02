@@ -34,9 +34,9 @@ docker-compose ps
 - Database UI Adminer App: http://127.0.0.1:8080 or http://localhost:8080
   UI Login Details from docker-compose file
 ```sh
-      POSTGRES_USER: xxxxx
-      POSTGRES_PASSWORD: xxxx
-      POSTGRES_DB: xxxxx
+POSTGRES_USER: xxxxx
+POSTGRES_PASSWORD: xxxx
+POSTGRES_DB: xxxxx
 ```
 - update docker-compose.yaml file as per your business requirements 
 
