@@ -29,6 +29,6 @@ cp -r <source_code_path> app
 docker-compose up -d
 docker-compose ps
 ```
-- Open Browser to access Nodejs/NextJS App [http://127.0.0.1:3000] or [http://localhost:3000]
+- Open Browser to access Nodejs/NextJS App: http://127.0.0.1:300 or http://localhost:3000
 
 - update docker-compose.yaml file as per your business requirements 
